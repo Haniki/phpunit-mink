@@ -419,7 +419,7 @@ abstract class BrowserTestCase extends \PHPUnit_Framework_TestCase implements IE
 	 *
 	 * @return void
 	 */
-	protected function onNotSuccessfulTest(\Exception $e)
+	protected function onNotSuccessfulTest($e)
 	{
 		$this->_eventDispatcher->dispatch(
 			self::TEST_FAILED_EVENT,
